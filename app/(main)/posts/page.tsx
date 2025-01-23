@@ -3,7 +3,6 @@ import { BackButton } from "@/components/ui/BackButton";
 import {
   Pagination,
   PaginationContent,
-  PaginationEllipsis,
   PaginationItem,
   PaginationLink,
   PaginationNext,
