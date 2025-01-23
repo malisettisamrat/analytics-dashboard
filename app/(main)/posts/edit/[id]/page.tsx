@@ -1,7 +1,7 @@
 "use client";
 
 import { BackButton } from "@/components/ui/BackButton";
-import React from "react";
+import React, { use } from "react";
 import * as z from "zod";
 import { useForm } from "react-hook-form";
 import posts from "@/data/post";
@@ -34,14 +34,14 @@ const formSchema = z.object({
   }),
 });
 
-interface PostEditPageProps {
-  params: {
-    id: string;
-  };
-}
-
-const PostEditPage = ({ params }: PostEditPageProps) => {
+const PostEditPage = ({
+  params: paramsPromise,
+}: {
+  params: Promise<{ id: string }>;
+}) => {
   const { toast } = useToast();
+
+  const params = use(paramsPromise);
 
   const post = posts.find((post) => post.id === params.id);
 
