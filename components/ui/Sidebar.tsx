@@ -29,7 +29,7 @@ export const Sidebar = () => {
         <CommandGroup heading="Suggestions">
           <CommandItem>
             <Gauge />
-            <Link href="/dashboard">Dashboard</Link>
+            <Link href="/">Dashboard</Link>
           </CommandItem>
           <CommandItem>
             <StickyNote />

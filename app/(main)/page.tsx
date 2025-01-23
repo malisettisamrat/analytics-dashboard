@@ -1,6 +1,5 @@
 import { AnalyticsChart } from "@/components/analytics/AnalyticsChart";
 import CommentsChart from "@/components/analytics/CommentsChart";
-import PieChart from "@/components/analytics/AuthorPostChart";
 import { DashboardCard } from "@/components/dashboard/DashboardCard";
 import { PostTable } from "@/components/posts/PostTable";
 import {
