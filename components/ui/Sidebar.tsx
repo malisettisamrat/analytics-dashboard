@@ -1,11 +1,11 @@
 import React from "react";
 import {
   Command,
+  CommandInput,
+  CommandList,
   CommandEmpty,
   CommandGroup,
-  CommandInput,
   CommandItem,
-  CommandList,
   CommandSeparator,
   CommandShortcut,
 } from "@/components/ui/command";
